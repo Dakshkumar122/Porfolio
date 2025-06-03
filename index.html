@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+    <nav class="navvbar">
+        <div class="daksh">daksh kumar</div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <br><span class="name">Daksh Kumar</span><br>
+                <div class="Passionate">Passionate frontend developer creating exceptional digital experiences with
+                    modern
+                    technologies and user-centered design principles.</div>
+                <span id="element"></span>
+                <div class="button">
+                   <a href="my resume.pdf"> <button class="btn btn-primary" id="btn1">Download Resume</button></a>
+                    <a href="#Contact"><button class="btn btn-secondary" id="btn2">Get in Touch</button></a>
+                </div>
+                <div class="d-flex gap-2 mt-4" id="social-links">
+                    <a href="#" class="btn btn-outline-primary social-circle"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="btn btn-outline-dark social-circle"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="btn btn-outline-info social-circle"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="btn btn-outline-success social-circle"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="img1.jpeg" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="secondsection" id="about">
+            <div class="text-center">
+                <h2 class="about">About Me</h2>
+                <p>
+                    I am a dedicated and enthusiastic frontend developer with a strong passion for building
+                    user-friendly and visually appealing web applications. With experience in HTML, CSS, JavaScript, and
+                    modern frameworks, I strive to deliver seamless digital experiences. I enjoy learning new
+                    technologies and continuously improving my skills to stay updated in the fast-evolving world of web
+                    development.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    <div
+                        style="display: inline-flex; align-items: center; justify-content: center; border: 2px solid #ccc; border-radius: 50%; width: 60px; height: 60px; margin-bottom: 10px; background-color: blueviolet; color: white;">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </div>
+                    <h3>Who Am I?</h3>
+                    <p>
+                        I'm a Full-Stack Python Developer with a passion for creating efficient and user-friendly
+                        applications.
+                    </p>
+                </div>
+                <div class="card2">
+                    <div
+                        style="display: inline-flex; align-items: center; justify-content: center; border: 2px solid #ccc; border-radius: 50%; width: 60px; height: 60px; margin-bottom: 10px; background-color: blueviolet; color: white;">
+                        <i class="fa-solid fa-laptop-code fa-2x"></i>
+                    </div>
+                    <h3>What I Do?</h3>
+                    <p>
+                        I specialize in building responsive and accessible web applications using modern technologies.
+                    </p>
+                </div>
+                <div class="card3"> 
+                    <div
+                        style="display: inline-flex; align-items: center; justify-content: center; border: 2px solid #ccc; border-radius: 50%; width: 60px; height: 60px; margin-bottom: 10px; background-color:blueviolet; color: white;">
+                        <i class="fa-solid fa-briefcase fa-2x"></i>
+                    </div>
+                    <h3>My Experience</h3>
+                    <p>
+                        I have worked on various projects, collaborating with cross-functional teams to deliver
+                        high-quality
+                        software solutions.
+                    </p>
+                </div>
+                <!-- technical skills -->
+                <div class="col-12 mt-5" id="skills">
+                    <h2 class="text-center mb-4" id="tech">Technical Skills</h2>
+                    <div class="row">
+                        <!-- Frontend -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <h4 class="font-semibold text-lg">Frontend</h4>
+                            <div class="space-y-2">
+                                <div class="skill-tag">
+                                    <i class="fab fa-html5 text-orange-500"></i>
+                                    HTML5
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-css3-alt text-blue-500"></i>
+                                    CSS3/SCSS
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-js-square text-yellow-500"></i>
+                                    JavaScript
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-react text-blue-400"></i>
+                                    React.js
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-vuejs text-green-500"></i>
+                                    Vue.js
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Styling -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <h4 class="font-semibold text-lg">Styling</h4>
+                            <div class="space-y-2">
+                                <div class="skill-tag">
+                                    <i class="fas fa-wind text-cyan-500"></i>
+                                    Tailwind CSS
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-bootstrap text-purple-500"></i>
+                                    Bootstrap
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-sass text-pink-500"></i>
+                                    Sass/SCSS
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-mobile-alt text-blue-500"></i>
+                                    Responsive Design
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Backend -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <h4 class="font-semibold text-lg">Backend</h4>
+                            <div class="space-y-2">
+                                <div class="skill-tag">
+                                    <i class="fab fa-node-js text-green-500"></i>
+                                    Node.js
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-server text-gray-500"></i>
+                                    Express.js
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-database text-blue-500"></i>
+                                    MongoDB
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-fire text-orange-500"></i>
+                                    Firebase
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tools -->
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <h4 class="font-semibold text-lg">Tools</h4>
+                            <div class="space-y-2">
+                                <div class="skill-tag">
+                                    <i class="fab fa-git-alt text-orange-500"></i>
+                                    Git/GitHub
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-figma text-purple-500"></i>
+                                    Figma
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-cube text-blue-500"></i>
+                                    Webpack
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-npm text-red-500"></i>
+                                    NPM/Yarn
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- third section -->
+            <section class="thirdsection" id="experience">
+                <div class="col-12 text-center mb-4">
+                    <h1 class="text-center">Experience</h1>
+                    <p class="description text-center">My professional journey and educational background</p>
+                    <h2 class="text-center">Work Experience</h2>
+                </div>
+                <div class="timeline">
+
+                    <div class="entry">
+                        <h3>Senior Frontend Developer <span class="date">2020 - Present</span></h3>
+                        <span class="company">Tech Innovations Inc.</span>
+                        <p>Led a team of 5 developers in creating responsive web applications. Implemented modern
+                            best practices and improved performance metrics by 40%. Mentored junior developers and
+                            conducted code reviews.</p>
+                        <div class="tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second card -->
+
+                <div class="timeline">
+
+                    <div class="entry">
+                        <h3>Frontend Developer<span class="date">2018 - 2020</span></h3>
+                        <span class="company">WebSolutions Co.</span>
+                        <p>Developed and maintained client websites and applications. Collaborated with design team
+                            to implement pixel-perfect, responsive layouts. Optimized applications for maximum speed
+                            and scalability.</p>
+                        <div class="tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SASS</span>
+                            <span class="tag">Webpack</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="timeline">
+
+                    <div class="entry">
+                        <h3>Junior Web Developer<span class="date">2016 - 2018</span></h3>
+                        <span class="company">Digital Agency XYZ</span>
+                        <p>Created and maintained websites for various clients using modern web technologies.
+                            Assisted in troubleshooting cross-browser compatibility issues and implementing
+                            responsive designs.</p>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">jQuery</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- education section -->
+                <div class="col-12 text-center mb-4">
+                    <h1 class="text-center">Education</h1>
+                </div>
+                <div class="timeline">
+                    <div class="entry">
+                        <h3>Master of Computer Science <span class="date">2014 - 2016</span></h3>
+                        <span class="company">University of Technology</span>
+                        <p>Specialized in Web Technologies and User Interface Design. Graduated with honors. Thesis:
+                            "Modern Frontend Frameworks and User Experience Optimization</p>
+                    </div>
+                </div>
+
+                <!-- second card -->
+                <div class="timeline">
+                    <div class="entry">
+                        <h3>Bachelor of Computer Science<span class="date">22010 - 2014</span></h3>
+                        <span class="company">State University</span>
+                        <p>Focused on Software Development and Database Systems. Participated in various coding
+                            competitions and hackathons. President of the Computer Science Club.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- fourth section -->
+            <section class="fourthsection" id="projects">
+                <div class="text-center mb-16 aos-init aos-animate" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        <span class="text-gradient">Featured Projects</span>
+                    </h2>
+                    <p class="text-lg opacity-75 max-w-2xl mx-auto">
+                        A collection of my recent work showcasing various technologies and design patterns
+                    </p>
+                </div>
+                <!-- card -->
+                <div class="projects-grid">
+
+                    <div class="card">
+                        <div class="card-header gradient-purple">📊</div>
+                        <div class="card-body">
+                            <div class="card-title">E-Commerce Dashboard</div>
+                            <div class="card-description">A responsive admin dashboard for e-commerce platforms with
+                                analytics, inventory management, and order processing.</div>
+                            <div class="tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">Live Demo</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header gradient-pink">🎨</div>
+                        <div class="card-body">
+                            <div class="card-title">Portfolio Template</div>
+                            <div class="card-description">A customizable portfolio template with smooth animations,
+                                responsive design, and dark/light mode.</div>
+                            <div class="tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">Live Demo</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header gradient-orange">💬</div>
+                        <div class="card-body">
+                            <div class="card-title">Real-time Chat App</div>
+                            <div class="card-description">A chat app with real-time messaging, user authentication, file
+                                sharing, and responsive design.</div>
+                            <div class="tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">Live Demo</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header gradient-dark">📝</div>
+                        <div class="card-body">
+                            <div class="card-title">Task Manager</div>
+                            <div class="card-description">A productivity app with drag-and-drop interface, task
+                                prioritization, and team collaboration features.</div>
+                            <div class="tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Firebase</span>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">View Live</a>
+                                <a href="#">Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header gradient-purple">🎬</div>
+                        <div class="card-body">
+                            <div class="card-title">Movie Recommendation</div>
+                            <div class="card-description">An AI-powered movie recommendation system with reviews,
+                                suggestions, and a wishlist manager.</div>
+                            <div class="tags">
+                                <span class="tag">Vue</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">Live Demo</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header gradient-red">🛒</div>
+                        <div class="card-body">
+                            <div class="card-title">E-commerce Platform</div>
+                            <div class="card-description">A full-featured e-commerce website with product catalog,
+                                secure payments, and admin panel.</div>
+                            <div class="tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Stripe</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="buttons">
+                                <a href="#">Live Demo</a>
+                                <a href="#">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="view-all">
+                    <a href="#">👀 View All Projects</a>
+                </div>
+            </section>
+            <!-- fiveth section -->
+            <section class="fivethsection" id="Contact">
+                <div class="col-12 text-center mb-4" style="margin-top: 60px;">
+                    <h1 class="text-center">Get In Touch</h1>
+                    <p class="description text-center">Interested in working together or have a question? Reach out and
+                        let's connect!</p>
+                </div>
+
+                <!-- card -->
+                <div class="grid lg:grid-cols-2 gap-12 contact-section">
+                    <!-- Contact Info -->
+                    <div class="contact-info aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="card p-8 h-full">
+                            <h3 class="text-2xl font-bold mb-8">Let's Connect</h3>
+                            <div class="space-y-6 mb-8">
+                                <div class="flex items-start space-x-4 contact-row">
+                                    <div class="icon-circle">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Email</h4>
+                                        <p class="opacity-75">daksh258586@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4 contact-row">
+                                    <div class="icon-circle">
+                                        <i class="fas fa-phone text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Phone</h4>
+                                        <p class="opacity-75">+91 9259882881</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4 contact-row">
+                                    <div class="icon-circle">
+                                        <i class="fas fa-map-marker-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Location</h4>
+                                        <p class="opacity-75">66-White field Banglor </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-4">Follow Me</h4>
+                                <div class="flex space-x-4 social-links">
+                                    <a href="https://github.com/dashboard" class="social-icon github">
+                                        <i class="fab fa-github text-xl"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/prakash-singh-46359a363"
+                                        class="social-icon linkedin"><a>
+                                            <a href="https://www.linkedin.com/in/daksh-kumar-18078a345/">
+                                                <i class="fab fa-linkedin text-xl"></i>
+                                            </a>
+                                            <a href="#" class="social-icon twitter">
+                                                <i class="fab fa-twitter text-xl"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/da.ksh5939/"
+                                                class="social-icon instagram">
+                                                <i class="fab fa-instagram text-xl"></i>
+                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="contact-form aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="card p-8">
+                            <h3 class="text-2xl font-bold mb-6">Send Message</h3>
+                            <form class="space-y-6" id="contactForm">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block font-medium mb-2 opacity-75">Your Name</label>
+                                        <input type="text" class="form-input" placeholder="John Doe" required>
+                                    </div>
+                                    <div>
+                                        <label class="block font-medium mb-2 opacity-75">Your Email</label>
+                                        <input type="email" class="form-input" placeholder="dakshkumar@gmail.com"
+                                            required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block font-medium mb-2 opacity-75">Subject</label>
+                                    <input type="text" class="form-input" placeholder="Project Inquiry" required>
+                                </div>
+                                <div>
+                                    <label class="block font-medium mb-2 opacity-75">Message</label>
+                                    <textarea rows="5" class="form-input textarea"
+                                        placeholder="Tell me about your project..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- footer section -->
+           <footer class="py-12 border-t border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold">
+                        <span class="text-gradient">Daksh Kumar</span>
+                    </h3>
+                    <p class="opacity-75 mt-2">Full Stack Engineer</p>
+                </div>
+                
+                <nav class="flex justify-center mb-8" aria-label="Footer Navigation" style="gap: 24px;">
+                    <a href="#home" style="color: black; text-decoration: none;" class="opacity-75 hover:opacity-100 transition-opacity" id="home">Home</a>
+                    <a href="#about" style="color: black; text-decoration: none;" class="opacity-75 hover:opacity-100 transition-opacity">About</a>
+                    <a href="#experience" style="color: black; text-decoration: none;" class="opacity-75 hover:opacity-100 transition-opacity">Experience</a>
+                    <a href="#projects" style="color: black; text-decoration: none;" class="opacity-75 hover:opacity-100 transition-opacity">Projects</a>
+                    <a href="#contact" style="color: black; text-decoration: none;" class="opacity-75 hover:opacity-100 transition-opacity">Contact</a>
+                </nav>
+                
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="https://github.com/dashboard" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daksh-kumar-18078a345/">
+                        <i class="fab fa-linkedin social-icon linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/da.ksh5939/" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <div class="text-sm opacity-50">
+                    © <span id="currentYear">2025</span> Daksh Kumar. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                    strings: [
+                        '<i>Full Stack Engineer</i>',
+                        '<i>Frontend developer</i>',
+                        '<i>Backend developer</i>',
+                        '<i>UI/UX Designer</i>'
+                    ],
+                    typeSpeed: 100,
+                    loop: true  // This enables infinite looping
+                });
+            </script>
+            <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
