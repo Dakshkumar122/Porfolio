@@ -58,49 +58,7 @@ let targetScroll = window.scrollY;
 
 
 // light and drak mode
-const modeToggle = document.createElement('button');
-modeToggle.textContent = 'Toggle Mode';
-modeToggle.style.position = 'fixed';
-modeToggle.style.bottom = '20px';
-modeToggle.style.right = '20px';
-modeToggle.style.zIndex = '10000';
-modeToggle.style.padding = '10px 20px';
-modeToggle.style.border = 'none';
-modeToggle.style.borderRadius = '5px';
-modeToggle.style.background = '#222';
-modeToggle.style.color = '#fff';
-modeToggle.style.cursor = 'pointer';
-modeToggle.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
-document.body.appendChild(modeToggle);
 
-function setMode(mode) {
-    if (mode === 'dark') {
-        document.body.style.background = '#181818';
-        document.body.style.color = '#fff';
-        cursor.style.border = '2px solid #00f';
-        cursor.style.background = 'rgba(0,0,255,0.1)';
-        gleater.style.background = 'radial-gradient(circle, rgba(0,0,255,0.3) 0%, rgba(0,0,255,0) 70%)';
-        modeToggle.style.background = '#222';
-        modeToggle.style.color = '#fff';
-    } else {
-        document.body.style.background = '#fff';
-        document.body.style.color = '#222';
-        cursor.style.border = '2px solid #0077ff';
-        cursor.style.background = 'rgba(0,119,255,0.08)';
-        gleater.style.background = 'radial-gradient(circle, rgba(0,119,255,0.18) 0%, rgba(0,119,255,0) 70%)';
-        modeToggle.style.background = '#eee';
-        modeToggle.style.color = '#222';
-    }
-    localStorage.setItem('theme', mode);
-}
-
-let currentMode = localStorage.getItem('theme') || 'dark';
-setMode(currentMode);
-
-modeToggle.addEventListener('click', () => {
-    currentMode = currentMode === 'dark' ? 'light' : 'dark';
-    setMode(currentMode);
-});
 // 
 /* Stary night animated background - mobile responsive */
 const starCanvas = document.createElement('canvas');
